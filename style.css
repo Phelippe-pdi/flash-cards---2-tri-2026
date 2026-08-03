@@ -1,77 +1,69 @@
-* {
-    margin: 0;
-    padding: 0;
-}
+* * <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universo Aranha</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-.cabecalho {
-    padding: 15px 25px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #7e3e1c;
-}
+    <header class="cabecalho">
+        <h1>Homem-Aranha</h1>
+        <a href="#" class="cabecalho-link">Quadrinhos & Curiosidades</a>
+    </header>
 
-.cartao {
-    width: 260px;
-    height: 200px;
-}
+    <main>
+        <h2>Passe o mouse sobre os cartões para revelar a verdade!</h2>
 
-.cartao-imagem {
-    width: 100%;
-}
+        <section>
+            <div class="cartao">
+                <div class="cartao-interno">
+                    <div class="cartao-frente">
+                        <img src="https://images.unsplash.com/photo-1635863138275-d9b33299680b?auto=format&fit=crop&w=600&q=80" alt="Homem-Aranha Clássico" class="cartao-imagem">
+                        <h3>Mito #1</h3>
+                        <p>"As teias do Homem-Aranha original saíam do próprio corpo dele."</p>
+                    </div>
+                    <div class="cartao-verso">
+                        <h3>Fato Real!</h3>
+                        <p>Nos quadrinhos clássicos, Peter Parker criou lançadores mecânicos de teia de química própria!</p>
+                    </div>
+                </div>
+            </div>
 
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    background-color: #f5f2f2;
-}
+            <div class="cartao">
+                <div class="cartao-interno">
+                    <div class="cartao-frente">
+                        <img src="https://images.unsplash.com/photo-1604200213928-ba3cf4fc8436?auto=format&fit=crop&w=600&q=80" alt="Homem-Aranha Ação" class="cartao-imagem">
+                        <h3>Mito #2</h3>
+                        <p>"O Homem-Aranha sempre usou o traje Vermelho e Azul."</p>
+                    </div>
+                    <div class="cartao-verso">
+                        <h3>Fato Real!</h3>
+                        <p>Ele já usou vários trajes, como o simbionte preto, a armadura Aranha e a roupa Iron Spider!</p>
+                    </div>
+                </div>
+            </div>
 
-main {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+            <div class="cartao">
+                <div class="cartao-interno">
+                    <div class="cartao-frente">
+                        <img src="https://images.unsplash.com/photo-1534809027769-b00d750a6bac?auto=format&fit=crop&w=600&q=80" alt="Homem-Aranha Máscara" class="cartao-imagem">
+                        <h3>Mito #3</h3>
+                        <p>"Peter Parker é o único Homem-Aranha no multiverso."</p>
+                    </div>
+                    <div class="cartao-verso">
+                        <h3>Fato Real!</h3>
+                        <p>Existem dezenas de heróis com a máscara, como Miles Morales, Gwen Stacy e Miguel O'Hara!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-.cabecalho-link {
-    color: #fff;
-    text-decoration: none;
-}
+    <footer>
+        <p>Com grandes poderes vêm grandes responsabilidades!</p>
+    </footer>
 
-h1 {
-    color: #fff;
-    font-size: 24px;
-}
-
-footer {
-    background-color: #7e3e1c;
-    padding: 15px 25px;
-    color: #fff;
-}
-
-.cartao-interno {
-    position: relative;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-}
-
-.cartao:hover .cartao-interno {
-    transform: rotateY(180deg);
-}
-
-.cartao-frente, .cartao-verso {
-    position: absolute;
-    border-radius: 12px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-    backface-visibility: hidden;
-}
-
-.cartao-verso {
-    transform: rotateY(180deg);
-}
-
-section {
-    display: flex;
-    gap: 16px;
-}
+</body>
+</html>
